@@ -14,8 +14,8 @@ const ErrorPage = () => {
           <p className="text-lg font-medium max-w-96 mx-auto mt-5 mb-3">
             Looks like something went wrong and the page you are looking for can&apos;t be found.
           </p>
-          <Link to="/" className="btn h-auto px-7 py-5 bg-black text-white hover:bg-black hover:text-white hover:translate-x-2">
-            Go Back
+          <Link to="/" className="btn h-auto px-7 py-5 bg-black text-white hover:bg-black hover:text-white hover:scale-105">
+            Back to Home
           </Link>
         </div>
       </div>

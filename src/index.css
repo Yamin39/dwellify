@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  height: 100vh;
+  background-color: #EEEEEE;
+}
+
 @media screen and (max-width: 640px) {
   html {
     font-size: 3.5vw;

@@ -3,7 +3,7 @@ import bannerTextImg from "../../assets/images/banner-text.jpg";
 const Banner = () => {
   return (
     <div className="pt-12 sm:pt-14 md:pt-16">
-      <div className="text-center md:text-left">
+      <div className="text-center md:text-left" data-aos="fade-zoom-in" data-aos-delay="100" data-aos-duration="1000">
         <p className="text-primary-color text-sm md:text-base uppercase mb-1">Welcome to dwellify</p>
         <div className="text-4xl md:text-[3.1rem] lg:text-[3.5rem] xl:text-6xl leading-tight text-black font-semibold uppercase">
           <h1>

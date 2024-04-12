@@ -1,13 +1,13 @@
 import PropTypes from "prop-types";
-import { createContext } from "react";
+import { createContext, useState } from "react";
 
 export const AuthContext = createContext(null);
 
 const AuthProvider = ({ children }) => {
-  const greet = "Hello World";
+  const [user, setUser] = useState("dfgdg");
 
   const authInfo = {
-    greet,
+    user,
   };
   return <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>;
 };

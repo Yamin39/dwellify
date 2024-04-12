@@ -1,0 +1,6 @@
+.NavLink-container .active {
+    background-color: transparent !important;
+    color: #282828 !important;
+    border-bottom: 4px solid #FA3E42;
+    border-radius: 0;
+}

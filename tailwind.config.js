@@ -4,7 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        "primary-black": "#282828",
+        "primary-color": "#282828",
+        "secondary-color": "#FA3E42",
+      },
+      fontFamily: {
+        poppins: "'Poppins', sans-serif",
       },
     },
   },

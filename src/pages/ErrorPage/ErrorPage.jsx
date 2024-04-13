@@ -1,3 +1,4 @@
+import "animate.css";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
@@ -7,10 +8,10 @@ const ErrorPage = () => {
       <Helmet>
         <title>Not Found</title>
       </Helmet>
-      <div className="h-full text-center flex flex-col justify-center">
+      <div className="h-full text-center flex flex-col justify-center" data-aos="fade-zoom-in" data-aos-duration="500">
         <div>
           <h1 className="text-9xl">404</h1>
-          <h4 className="text-5xl font-light mt-4">Oops!</h4>
+          <h4 className="text-5xl font-light mt-4 animate__animated animate__tada">Oops!</h4>
           <p className="text-lg font-medium max-w-96 mx-auto mt-5 mb-3">
             Looks like something went wrong and the page you are looking for can&apos;t be found.
           </p>

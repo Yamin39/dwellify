@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { AiFillGithub, AiFillGoogleCircle } from "react-icons/ai";
 import { MdEmail, MdOutlineKey } from "react-icons/md";
 import { Link } from "react-router-dom";
@@ -6,6 +7,9 @@ import image from "../../assets/images/login-img.jpg";
 const Login = () => {
   return (
     <div className="flex gap-10 mt-10 justify-evenly items-center">
+      <Helmet>
+        <title>Login | Dwellify</title>
+      </Helmet>
       {/* login form */}
       <div className="text-center sm:min-h-[80vh] lg:min-h-0 sm:flex lg:block justify-center items-center">
         <div className="w-fit mx-auto" data-aos="fade-right" data-aos-duration="1000">
@@ -36,13 +40,13 @@ const Login = () => {
           {/* login form */}
           <form>
             {/* email */}
-            <div className="w-full mx-auto flex items-center gap-3 text-base border-2 text-[#acacac] border-[#c1c8d0] rounded-full py-3 px-4 pl-6 focus:shadow-2xl">
+            <div className="w-full mx-auto flex items-center gap-3 text-base border-2 text-[#acacac] border-[#c1c8d0] rounded-full py-3 px-4 pl-6">
               <MdEmail className="text-xl" />
               <input type="email" placeholder="Email" className="bg-transparent text-primary-color outline-none" required />
             </div>
 
             {/* password */}
-            <div className="mt-4 w-full mx-auto flex items-center gap-3 text-base border-2 text-[#acacac] border-[#c1c8d0] rounded-full py-3 px-4 pl-6 focus:shadow-2xl">
+            <div className="mt-4 w-full mx-auto flex items-center gap-3 text-base border-2 text-[#acacac] border-[#c1c8d0] rounded-full py-3 px-4 pl-6">
               <MdOutlineKey className="text-xl" />
               <input type="password" placeholder="Password" className="bg-transparent text-primary-color outline-none" required />
             </div>

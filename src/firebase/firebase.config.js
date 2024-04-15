@@ -20,13 +20,4 @@ const app = initializeApp(firebaseConfig);
 // Initialize Firebase Authentication and get a reference to the service
 const auth = getAuth(app);
 
-
-// console.log(import.meta.env.VITE_APIKEY);
-// console.log(import.meta.env.VITE_AUTHDOMAIN);
-// console.log(import.meta.env.VITE_PROJECTID);
-// console.log(import.meta.env.VITE_STORAGEBUCKET);
-// console.log(import.meta.env.VITE_MESSAGINGSENDERID);
-// console.log(import.meta.env.VITE_APPID);
-// console.log("object");
-
 export default auth;

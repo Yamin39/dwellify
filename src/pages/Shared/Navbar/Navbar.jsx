@@ -3,7 +3,14 @@ import useAuth from "../../../hooks/useAuth";
 import "./Navbar.css";
 
 const Navbar = () => {
-  const { user } = useAuth();
+  const { user, loading, logOut } = useAuth();
+
+  const handleLogOut = () => {
+    logOut()
+      .then((res) => console.log(res))
+      .catch((err) => console.error(err));
+  };
+
   const links = (
     <>
       <li>
@@ -11,6 +18,9 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink to="/updateProfile">Update Profile</NavLink>
+      </li>
+      <li>
+        <NavLink to="/register">Register</NavLink>
       </li>
     </>
   );
@@ -34,26 +44,32 @@ const Navbar = () => {
       <div className="hidden lg:flex">
         <ul className="NavLink-container gap-6 menu menu-horizontal px-1 font-medium text-base">{links}</ul>
       </div>
-      <div>
-        {user ? (
-          <div className="flex gap-3 justify-center items-center">
-            <div className="bg-gray-700 rounded-full cursor-pointer tooltip tooltip-bottom" data-tip="Hrittik Roshan">
-              <img
-                className="w-10 h-10 rounded-full object-cover"
-                src="https://assets.gqindia.com/photos/5fdc6eb81c519f6c10ba2d2f/16:9/w_1920,c_limit/Hrithik-Roshan%20(2).jpg"
-              />
+      {loading ? (
+        <span className="loading loading-spinner"></span>
+      ) : (
+        <div id="nav-right">
+          {user ? (
+            <div className="flex gap-3 justify-center items-center">
+              <div className="bg-gray-300 rounded-full cursor-pointer tooltip tooltip-bottom" data-tip={user.displayName}>
+                <img className="w-10 h-10 rounded-full object-cover" src={user.photoURL} alt="User" />
+              </div>
+              <button
+                onClick={handleLogOut}
+                className="btn h-auto min-h-0 btn-error text-base bg-secondary-color text-white rounded-full py-2 px-7  hover:bg-red-600"
+              >
+                Logout
+              </button>
             </div>
-            <button className="btn h-auto min-h-0 btn-error text-base bg-secondary-color text-white rounded-full py-2 px-7  hover:bg-red-600">Logout</button>
-          </div>
-        ) : (
-          <NavLink
-            to="/login"
-            className="btn h-auto min-h-0 btn-ghost text-base border border-primary-color rounded-full py-2 px-7 hover:border-primary-color hover:bg-gray-200"
-          >
-            Login
-          </NavLink>
-        )}
-      </div>
+          ) : (
+            <NavLink
+              to="/login"
+              className="login btn h-auto min-h-0 btn-ghost text-base border border-primary-color rounded-full py-2 px-7 hover:border-primary-color hover:bg-gray-200"
+            >
+              Login
+            </NavLink>
+          )}
+        </div>
+      )}
     </nav>
   );
 };

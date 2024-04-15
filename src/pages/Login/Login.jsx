@@ -12,7 +12,7 @@ const Login = () => {
       </Helmet>
       {/* login form */}
       <div className="text-center sm:min-h-[80vh] lg:min-h-0 sm:flex lg:block justify-center items-center">
-        <div className="w-fit mx-auto" data-aos="fade-right" data-aos-duration="1000">
+        <div className="w-fit mx-auto" data-aos={window.innerWidth > 1024 ? "fade-right" : "fade-zoom-in"} data-aos-duration="1000">
           <h4 className="text-4xl font-bold">
             Welcome <span className="text-secondary-color">Back</span>👏
           </h4>
@@ -42,13 +42,13 @@ const Login = () => {
             {/* email */}
             <div className="w-full mx-auto flex items-center gap-3 text-base border-2 text-[#acacac] border-[#c1c8d0] rounded-full py-3 px-4 pl-6">
               <MdEmail className="text-xl" />
-              <input type="email" placeholder="Email" className="bg-transparent text-primary-color outline-none" required />
+              <input type="email" placeholder="Email" className="bg-transparent w-full text-primary-color outline-none" required />
             </div>
 
             {/* password */}
             <div className="mt-4 w-full mx-auto flex items-center gap-3 text-base border-2 text-[#acacac] border-[#c1c8d0] rounded-full py-3 px-4 pl-6">
               <MdOutlineKey className="text-xl" />
-              <input type="password" placeholder="Password" className="bg-transparent text-primary-color outline-none" required />
+              <input type="password" placeholder="Password" className="bg-transparent w-full text-primary-color outline-none" required />
             </div>
 
             {/* submit button */}

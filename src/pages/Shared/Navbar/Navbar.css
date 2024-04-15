@@ -1,6 +1,11 @@
-.NavLink-container .active {
-    background-color: transparent !important;
-    color: #282828 !important;
-    border-bottom: 4px solid #FA3E42;
-    border-radius: 0;
+#nav-right .active {
+  border: none;
+}
+
+.NavLink-container .active,
+#nav-right .active {
+  background-color: transparent !important;
+  color: #282828 !important;
+  border-bottom: 4px solid #fa3e42;
+  border-radius: 0;
 }

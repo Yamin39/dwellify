@@ -16,11 +16,11 @@ const Navbar = () => {
       <li>
         <NavLink to="/">Home</NavLink>
       </li>
-      {/* {user && ( */}
-      <li>
-        <NavLink to="/updateProfile">Update Profile</NavLink>
-      </li>
-      {/* )} */}
+      {user && (
+        <li>
+          <NavLink to="/updateProfile">Update Profile</NavLink>
+        </li>
+      )}
       <li>
         <NavLink to="/register">Register</NavLink>
       </li>

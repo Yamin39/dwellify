@@ -4,12 +4,15 @@ import { useForm } from "react-hook-form";
 import { AiFillGithub, AiFillGoogleCircle } from "react-icons/ai";
 import { IoEyeOffSharp, IoEyeSharp } from "react-icons/io5";
 import { MdEmail, MdOutlineKey } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import image from "../../assets/images/login-img.jpg";
 import useAuth from "../../hooks/useAuth";
 import useToasts from "../../hooks/useToasts";
 
 const Login = () => {
+  const navigate = useNavigate();
+  const { state } = useLocation();
+
   // Password Show / Hide Toggle
   const [passToggle, setPassToggle] = useState(false);
 
@@ -25,6 +28,7 @@ const Login = () => {
       .then((result) => {
         console.log(result.user);
         successToast("Login Successful");
+        navigate(state || "/");
       })
       .catch((error) => console.log(error));
   };
@@ -35,6 +39,7 @@ const Login = () => {
       .then((result) => {
         console.log(result.user);
         successToast("Login Successful");
+        navigate(state || "/");
       })
       .catch((error) => {
         console.log(error);
@@ -61,6 +66,7 @@ const Login = () => {
       .then((result) => {
         console.log(result.user);
         successToast("Login Successful");
+        navigate(state || "/");
       })
       .catch((error) => {
         console.error(error.message);
@@ -135,7 +141,7 @@ const Login = () => {
                 />
               </div>
               <div onClick={() => setPassToggle(!passToggle)} className="text-[1.4rem] cursor-pointer">
-                {passToggle ? <IoEyeSharp /> : <IoEyeOffSharp />}
+                {passToggle ? <IoEyeOffSharp /> : <IoEyeSharp />}
               </div>
             </div>
 

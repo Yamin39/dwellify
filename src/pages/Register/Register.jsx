@@ -141,7 +141,7 @@ const Register = () => {
                 />
               </div>
               <div onClick={() => setPassToggle(!passToggle)} className="text-[1.4rem] cursor-pointer">
-                {passToggle ? <IoEyeSharp /> : <IoEyeOffSharp />}
+                {passToggle ? <IoEyeOffSharp /> : <IoEyeSharp />}
               </div>
             </div>
 

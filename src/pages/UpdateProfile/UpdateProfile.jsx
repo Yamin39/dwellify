@@ -18,6 +18,9 @@ const UpdateProfile = () => {
         console.log(res);
         successToast("Profile updated successfully");
         setProfileLoader(true);
+        setTimeout(() => {
+          window.location.reload();
+        }, 1500);
       })
       .catch((err) => {
         console.error(err);
@@ -31,17 +34,17 @@ const UpdateProfile = () => {
       </Helmet>
       <div className="pt-8 text-center" data-aos="fade-in" data-aos-duration="1000">
         <h4 className="text-4xl font-bold">
-          Hi, <span className="text-secondary-color">{user.displayName}</span>!
+          Hi, <span className="text-secondary-color">{user.displayName || ""}</span>!
         </h4>
         <p className="text-lg font-medium mt-2 text-slate-600">Update Your Profile</p>
       </div>
       <div className="w-fit mx-auto  mt-14 mb-10">
-        <div className="bg-gray-300 rounded-full size-40">
+        <div className="bg-gray-300 rounded-full mx-auto size-40">
           <img className="size-full rounded-full object-cover" src={user.photoURL} alt="User" />
         </div>
-        <p className="text-lg font-medium mt-3 text-slate-600">{user.email}</p>
+        <p className="text-lg text-center font-medium mt-3 text-slate-600">{user.email || "Email not found"}</p>
       </div>
-      <div className="max-w-[400px] mx-auto">
+      <div className="max-w-[25rem] mx-auto">
         <form onSubmit={onSubmit}>
           {/* name */}
           <div className="mt-4 w-full mx-auto flex items-center gap-3 text-base border-2 text-[#acacac] border-[#c1c8d0] rounded-full py-3 px-4 pl-6">

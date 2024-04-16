@@ -18,7 +18,7 @@ const Register = () => {
   const { successToast, errorToast } = useToasts();
 
   // getting data from AuthContext
-  const { setProfileLoader, createUser, updateNameAndPhoto } = useAuth();
+  const { setProfileLoader, createUser, updateNameAndPhoto, setLoading } = useAuth();
 
   // handling form
   const { register, handleSubmit } = useForm();
@@ -64,6 +64,7 @@ const Register = () => {
       })
       .catch((error) => {
         console.error(error.message);
+        setLoading(false);
         if (/email-already-in-use/.test(error.message)) {
           errorToast("Email already in use");
         } else {

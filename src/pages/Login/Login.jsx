@@ -36,7 +36,9 @@ const Login = () => {
         console.log(result.user);
         successToast("Login Successful");
       })
-      .catch((error) => console.log(error));
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   // handling form

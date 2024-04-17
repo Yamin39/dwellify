@@ -1,6 +1,5 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
-import AnimatedCursor from "react-animated-cursor";
 import { Outlet } from "react-router-dom";
 import { Bounce, ToastContainer } from "react-toastify";
 import Navbar from "../pages/Shared/Navbar/Navbar";
@@ -25,25 +24,6 @@ const Root = () => {
         theme="colored"
         transition={Bounce}
       />
-
-      {/* custom cursor */}
-      <div className={window.innerWidth > 1024 ? "block" : "hidden"}>
-        <AnimatedCursor
-          innerSize={8}
-          outerSize={35}
-          innerScale={1}
-          outerScale={2}
-          outerAlpha={0}
-          hasBlendMode={true}
-          showSystemCursor={true}
-          innerStyle={{
-            backgroundColor: "black",
-          }}
-          outerStyle={{
-            border: "3px solid black",
-          }}
-        />
-      </div>
     </div>
   );
 };

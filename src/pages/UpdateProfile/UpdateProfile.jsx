@@ -18,9 +18,6 @@ const UpdateProfile = () => {
         console.log(res);
         successToast("Profile updated successfully");
         setProfileLoader(true);
-        setTimeout(() => {
-          window.location.reload();
-        }, 1500);
       })
       .catch((err) => {
         console.error(err);

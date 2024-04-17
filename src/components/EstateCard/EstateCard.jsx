@@ -25,18 +25,18 @@ const EstateCard = ({ estate }) => {
           {price}
           {rent_per && <span className="text-slate-600 text-sm">{rent_per}</span>}
         </h6>
-        <div className="flex items-center gap-2 py-1">
+        <div title="Area" className="flex items-center gap-2 py-1">
           <LuPencilRuler />
           <p>{area}</p>
         </div>
       </div>
 
-      <div className="flex items-center gap-2 py-1">
+      <div title="Segment Name" className="flex items-center gap-2 py-1">
         <BiCategoryAlt />
         <p>{segment_name}</p>
       </div>
 
-      <div className="flex items-center gap-2 py-1">
+      <div title="Estate Location" className="flex items-center gap-2 py-1">
         <GrLocation />
         <p>{estate_location}</p>
       </div>

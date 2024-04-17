@@ -1,0 +1,56 @@
+[
+  {
+    "blog_title": "5 Tips for Buying Your First Single-Family Home",
+    "id": "101",
+    "author_name": "Jane Smith",
+    "description": "Learn essential tips for buying your first single-family home, from budgeting to location selection.",
+    "publish_date": "16 Jun 2022",
+    "min_read": "4 Min Read",
+    "tags": ["homebuying"]
+  },
+  {
+    "blog_title": "Designing Your Dream Townhouse: A Guide",
+    "id": "102",
+    "author_name": "John Doe",
+    "description": "Explore innovative design ideas and practical tips to personalize your townhouse and make it your dream home.",
+    "publish_date": "23 Jul 2022",
+    "min_read": "5 Min Read",
+    "tags": ["design", "decor"]
+  },
+  {
+    "blog_title": "Maximizing Space in Apartments: Smart Strategies",
+    "id": "103",
+    "author_name": "Emily Adams",
+    "description": "Discover smart strategies for maximizing space in apartments with clever storage solutions and multi-functional furniture.",
+    "publish_date": "10 Aug 2022",
+    "min_read": "6 Min Read",
+    "tags": ["organization"]
+  },
+  {
+    "blog_title": "Student Housing: What to Look for When Choosing a Place",
+    "id": "104",
+    "author_name": "Michael Johnson",
+    "description": "Find out what to consider when selecting student housing, from proximity to campus to amenities and security.",
+    "publish_date": "30 Aug 2022",
+    "min_read": "3 Min Read",
+    "tags": ["housing", "college life"]
+  },
+  {
+    "blog_title": "Benefits of Senior Living Communities: A Comprehensive Guide",
+    "id": "105",
+    "author_name": "Linda Wilson",
+    "description": "Discover the numerous benefits of senior living communities, including amenities, social opportunities, and health services.",
+    "publish_date": "15 Sep 2022",
+    "min_read": "7 Min Read",
+    "tags": ["senior"]
+  },
+  {
+    "blog_title": "Planning the Perfect Vacation Rental: A Checklist",
+    "id": "106",
+    "author_name": "Chris Turner",
+    "description": "Get a comprehensive checklist for planning the perfect vacation rental, covering everything from amenities to location and budget.",
+    "publish_date": "5 Oct 2022",
+    "min_read": "4 Min Read",
+    "tags": ["vacation", "checklist"]
+  }
+]

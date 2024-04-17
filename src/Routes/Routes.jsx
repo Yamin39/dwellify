@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Root from "../layouts/Root";
+import Blogs from "../pages/Blogs/Blogs";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import EstateDetails from "../pages/EstateDetails/EstateDetails";
 import Home from "../pages/Home/Home";
@@ -41,6 +42,15 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <EstateDetails></EstateDetails>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/blogs",
+        loader: () => fetch("/blogs.json"),
+        element: (
+          <PrivateRoute>
+            <Blogs></Blogs>
           </PrivateRoute>
         ),
       },

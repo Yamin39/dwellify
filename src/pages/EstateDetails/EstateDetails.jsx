@@ -17,10 +17,12 @@ const EstateDetails = () => {
         <title>{estate_title} | Dwellify</title>
       </Helmet>
       <div className="mt-5">
+        {/* banner */}
         <div className="relative w-full md:h-[24rem] lg:h-[27rem] xl:h-[37rem] rounded-2xl">
-          <img className="size-full object-cover rounded-3xl" src={image} alt="" />
+          <img className="size-full object-cover rounded-3xl" src={image} />
           <p className="absolute bottom-4 left-4 bg-secondary-color px-5 py-2 rounded-xl text-lg text-white font-medium">{status}</p>
         </div>
+        {/* full details */}
         <div className="flex gap-6 flex-col md:flex-row justify-between items-start mt-10">
           <div className="flex-grow">
             <h1 className="text-4xl md:text-5xl font-bold">{estate_title}</h1>

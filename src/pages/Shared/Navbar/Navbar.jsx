@@ -1,14 +1,22 @@
 import { NavLink } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
+import useToasts from "../../../hooks/useToasts";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const { successToast, errorToast } = useToasts();
   const { user, loading, logOut } = useAuth();
 
   const handleLogOut = () => {
     logOut()
-      .then((res) => console.log(res))
-      .catch((err) => console.error(err));
+      .then((res) => {
+        console.log(res);
+        successToast("Logout Successful");
+      })
+      .catch((err) => {
+        console.error(err);
+        errorToast(err.message);
+      });
   };
 
   const links = (
@@ -18,7 +26,7 @@ const Navbar = () => {
       </li>
       {user && (
         <li>
-          <NavLink to="/updateProfile">Update Profile</NavLink>
+          <NavLink to="/update-profile">Update Profile</NavLink>
         </li>
       )}
       <li>

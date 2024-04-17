@@ -84,25 +84,3 @@ AuthProvider.propTypes = {
 };
 
 export default AuthProvider;
-
-
-/*
-
-
-create a JSON file of 6 data for the category “Residential”. Segments are: Single-family homes, townhouses, apartments, student
-housing, senior living communities, vacation rentals. Each data will contain -
-○ image,
-○ estate_title,
-○ id,
-○ segment_name,   
-○ description,
-○ price,
-○ Status => It can be “sale”, “rent”
-○ Area => for example: 2000 sq ft
-○ location
-○ facilities => in an array => [ “living room”, “swimming pool”, “Kitchen”]
-
-
-
-
-*/

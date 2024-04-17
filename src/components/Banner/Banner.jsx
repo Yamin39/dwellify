@@ -8,7 +8,7 @@ const Banner = () => {
     <div className="pt-12 sm:pt-14 md:pt-16">
       {/* title */}
       <div className="text-center md:text-left" data-aos="fade-zoom-in" data-aos-delay="100" data-aos-duration="1000">
-        <p className="text-primary-color text-sm md:text-base uppercase mb-1">Welcome to dwellify</p>
+        <p className="text-primary-color text-sm md:text-base uppercase mb-1">Welcome to Dwellify</p>
         <div className="text-4xl md:text-[3.1rem] lg:text-[3.5rem] xl:text-6xl leading-tight text-black font-semibold uppercase">
           <h1>
             Connecting You with <span className="lg:hidden">Exceptional Residences</span>

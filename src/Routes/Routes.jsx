@@ -15,10 +15,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
+        loader: () => fetch("/estates.json"),
         element: <Home></Home>,
       },
       {
-        path: "/updateProfile",
+        path: "/update-profile",
         element: (
           <PrivateRoute>
             <UpdateProfile></UpdateProfile>

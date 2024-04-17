@@ -27,21 +27,23 @@ const Root = () => {
       />
 
       {/* custom cursor */}
-      <AnimatedCursor
-        innerSize={8}
-        outerSize={35}
-        innerScale={1}
-        outerScale={2}
-        outerAlpha={0}
-        hasBlendMode={true}
-        showSystemCursor={true}
-        innerStyle={{
-          backgroundColor: "black",
-        }}
-        outerStyle={{
-          border: "3px solid black",
-        }}
-      />
+      <div className={window.innerWidth > 1024 ? "block" : "hidden"}>
+        <AnimatedCursor
+          innerSize={8}
+          outerSize={35}
+          innerScale={1}
+          outerScale={2}
+          outerAlpha={0}
+          hasBlendMode={true}
+          showSystemCursor={true}
+          innerStyle={{
+            backgroundColor: "black",
+          }}
+          outerStyle={{
+            border: "3px solid black",
+          }}
+        />
+      </div>
     </div>
   );
 };

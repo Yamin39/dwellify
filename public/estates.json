@@ -1,0 +1,80 @@
+[
+  {
+    "image": "https://i.ibb.co/F5Kf2Bd/Charming-Family-House.jpg",
+    "estate_title": "Charming Family House",
+    "id": "10",
+    "segment_name": "Single-family homes",
+    "description": "A beautiful single-family home with a spacious backyard and a modern interior.",
+    "price": "$450,000",
+    "status": "Sale",
+    "rent_per": null,
+    "area": "2200 sq ft",
+    "estate_location": "Los Angeles, CA",
+    "facilities": ["living room", "garage", "garden"]
+  },
+  {
+    "image": "https://i.ibb.co/0sbw3ms/Modern-Townhouse-Complex-Featured-Img.jpg",
+    "estate_title": "Modern Townhouse",
+    "id": "20",
+    "segment_name": "Townhouses",
+    "description": "A modern townhouse with a rooftop deck and easy access to local amenities.",
+    "price": "$2,300",
+    "status": "Rent",
+    "rent_per": "/month",
+    "area": "1800 sq ft",
+    "estate_location": "San Francisco, CA",
+    "facilities": ["living room", "rooftop deck", "garage"]
+  },
+  {
+    "image": "https://i.ibb.co/7Nyn6pK/Modern-Townhouse.jpg",
+    "estate_title": "Luxurious Apartment",
+    "id": "30",
+    "segment_name": "Apartments",
+    "description": "A luxurious apartment with stunning city views and top-notch amenities.",
+    "price": "$3,500",
+    "status": "Rent",
+    "rent_per": "/month",
+    "area": "1500 sq ft",
+    "estate_location": "New York, NY",
+    "facilities": ["living room", "swimming pool", "fitness center"]
+  },
+  {
+    "image": "https://i.ibb.co/jZ2Rnnv/web-Anthem-House-front-entrance-700x700.jpg",
+    "estate_title": "Student Housing Complex",
+    "id": "40",
+    "segment_name": "Student housing",
+    "description": "A student housing complex with shared facilities and easy access to campus.",
+    "price": "$800",
+    "status": "Rent",
+    "rent_per": "/month",
+    "area": "800 sq ft",
+    "estate_location": "Austin, TX",
+    "facilities": ["common area", "study rooms", "laundry room"]
+  },
+  {
+    "image": "https://i.ibb.co/sgMHDwZ/CS3-0021-1.webp",
+    "estate_title": "Senior Living Community",
+    "id": "50",
+    "segment_name": "Senior living communities",
+    "description": "A serene senior living community with beautiful gardens and recreational activities.",
+    "price": "$400,000",
+    "status": "Sale",
+    "rent_per": null,
+    "area": "2500 sq ft",
+    "estate_location": "Miami, FL",
+    "facilities": ["living room", "garden", "recreation room"]
+  },
+  {
+    "image": "https://i.ibb.co/02QMkPt/6-bedroom-beachfront-30-A-vacation-rental-00006.jpg",
+    "estate_title": "Beachfront Vacation Rental",
+    "id": "60",
+    "segment_name": "Vacation rentals",
+    "description": "A stunning beachfront vacation rental with direct access to the beach and ocean views.",
+    "price": "$4,000",
+    "status": "Rent",
+    "rent_per": "/week",
+    "area": "3000 sq ft",
+    "estate_location": "Honolulu, HI",
+    "facilities": ["living room", "private beach access"]
+  }
+]

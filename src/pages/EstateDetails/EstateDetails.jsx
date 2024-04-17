@@ -14,7 +14,7 @@ const EstateDetails = () => {
   return (
     <div>
       <Helmet>
-        <title>Estate Details | Dwellify</title>
+        <title>{estate_title} | Dwellify</title>
       </Helmet>
       <div className="mt-5">
         <div className="relative w-full md:h-[24rem] lg:h-[27rem] xl:h-[37rem] rounded-2xl">

@@ -4,7 +4,7 @@ Welcome to Dwellify
 
 ## Live Site
 
-live site URL: [Dwellify](https://dwellify-7a178.web.app/)
+live site URL: [Dwellify](https://dwellify-by-yamin.vercel.app/)
 
 ## Features and Characteristics
 

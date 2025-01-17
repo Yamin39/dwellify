@@ -15,7 +15,7 @@ const UpdateProfile = () => {
     const photoURL = e.target.photoURL.value;
     updateNameAndPhoto(user, name, photoURL)
       .then((res) => {
-        console.log(res);
+        // console.log(res);
         successToast("Profile updated successfully");
         setProfileLoader(true);
       })

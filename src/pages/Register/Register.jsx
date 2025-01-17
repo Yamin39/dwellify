@@ -49,10 +49,10 @@ const Register = () => {
     // creating user
     createUser(email, password)
       .then((result) => {
-        console.log(result.user);
+        // console.log(result.user);
         updateNameAndPhoto(result.user, name, photoURL)
           .then((res) => {
-            console.log(res);
+            // console.log(res);
             successToast("Registration Successful");
             setProfileLoader(true);
             navigate("/");

@@ -26,23 +26,25 @@ const Login = () => {
   const handleGoogle = () => {
     logInWithGoogle()
       .then((result) => {
-        console.log(result.user);
+        // console.log(result.user);
         successToast("Login Successful");
         navigate(state || "/");
       })
-      .catch((error) => console.log(error));
+      .catch((error) => {
+        // console.log(error)
+      });
   };
 
   // google login
   const handleGithub = () => {
     logInWithGithub()
       .then((result) => {
-        console.log(result.user);
+        // console.log(result.user);
         successToast("Login Successful");
         navigate(state || "/");
       })
       .catch((error) => {
-        console.log(error);
+        // console.log(error);
       });
   };
 
@@ -64,7 +66,7 @@ const Login = () => {
 
     logIn(email, password)
       .then((result) => {
-        console.log(result.user);
+        // console.log(result.user);
         successToast("Login Successful");
         navigate(state || "/");
       })

@@ -9,7 +9,7 @@ const EstateDetails = () => {
   const estates = useLoaderData();
   const { estateId } = useParams();
   const estate = estates.find((estate) => estate.id === estateId);
-  console.log(estate);
+  // console.log(estate);
   const { image, description, status, price, area, segment_name, estate_title, estate_location, rent_per, facilities } = estate;
   return (
     <div>
